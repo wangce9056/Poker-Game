@@ -1,0 +1,111 @@
+﻿With A length of A string representation of A card: (2 D, C, H, S) + (A, 2,3,4,5,6,7,8,9,0, J, Q, K) with "jk", "jk" said wang, king of judah, respectively
+
+The order of play is counterclockwise
+
+Characters are represented by a string ("banker","banker_opposite","banker_left","banker_right") for banker, banker's opposite, banker's left, and banker's right
+
+Don't consider flipping cards
+
+Design in python
+
+
+
+player module design:
+
+
+
+Design function:
+
+def add_card_and_is_snatch(current_card):
+
+Indicates that the player touches a curernt_card and chooses whether to take it or not.
+
+current_card represents a card (a string of 2 lengths).
+
+Return the string of the corresponding card if the card is stolen, otherwise return ""
+
+
+
+Design function:
+
+def add_left_cards(left_cards):
+
+It only needs to be used by the dealer. It means the bottom card is left_cards, and left_cards is a list of strings of length 2
+
+You need to return the card that the player is going to bury, and the return value is also a list of strings of length 2
+
+
+
+Design function:
+
+def finish_one_round(current_turn_out_cards):
+
+Denotes the end of the round, the player is informed of the round's play,
+
+current_turn_out_cards Indicates the list of a triplet (order,role,card).
+
+Each triplet represents information about a card that someone played before you played that round,
+
+order is an integer indicating the order in which cards are played (1,2,3,4).
+
+role is a string representing a role ("banker","banker_opposite","banker_left","banker_right").
+
+card is a card
+
+
+
+Design function:
+
+def set_main_value(main_value):
+
+Players are told what is the main value, main_value is A character (A, 2,3,4,5,6,7,8,9,0, J, Q, K) says the main value
+
+
+
+Design function:
+
+def set_main_color(main_color):
+
+The player is told what the main suit is, and main_color is a character (D,C,H,S) for the main suit
+
+
+
+Design function:
+
+def player_init():
+
+Indicates that a new game is now started and the relevant variables are initialized
+
+
+
+Design function:
+
+def set_role(role):
+
+Players are told what their role is, and the role is a string ("banker","banker_opposite","banker_left","banker_right").
+
+
+
+Design function:
+
+def play_out_cards(turn, current_turn_out_cards):
+
+turn indicates the current round of play. current_turn_out_cards indicates the list of a triplet (order,role,card).
+
+Each triplet represents information about a card that someone played before you played that round,
+
+order is an integer indicating the order in which cards are played (1,2,3,4).
+
+role is a string representing a role ("banker","banker_opposite","banker_left","banker_right").
+
+card is a card
+
+The function needs to return the card it decided to play
+
+
+
+Design function:
+
+def show_cards():
+
+Need to return the current player's hand (a list of strings of length 2)
