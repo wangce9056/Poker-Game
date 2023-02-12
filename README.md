@@ -13,6 +13,6 @@ When a game ends, the team with more score wins and "upgrade",and go into next g
 The initial level is Level 2，Maximum level is Level K, The team that first reaches Level K  wins.
 
 #How to run the programm:
-Python 3.8 installed
-Execute "pip install -r requirements.txt" in file directory
-Start judge.py
+Python 3.8 installed.
+Execute "pip install -r requirements.txt" in file directory.
+Start judge.py.
