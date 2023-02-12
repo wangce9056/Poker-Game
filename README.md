@@ -11,3 +11,8 @@ If there are score cards played in this round  ,the winner will get score,and go
 Each player has 12 cards,which means every 12 round as a game.
 When a game ends, the team with more score wins and "upgrade",and go into next game.
 The initial level is Level 2，Maximum level is Level K, The team that first reaches Level K  wins.
+
+#How to run the programm:
+Python 3.8 installed
+Execute "pip install -r requirements.txt" in file directory
+Start judge.py
